@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 20, 2014 8:09:03 PM EST" modified="November 20, 2014 8:51:18 PM EST" specVersion="4" urnVersion="1.27" nextGlobalID="54">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 20, 2014 8:09:03 PM EST" modified="November 24, 2014 6:45:27 PM EST" specVersion="6" urnVersion="1.27" nextGlobalID="56">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup5" id="5">
       <scenarios name="ScenarioDef6" id="6"/>
@@ -20,11 +20,11 @@
     <responsibilities name="loadGameRequest(playersOnline)&lt;&lt;in>>" id="35" respRefs="36"/>
     <responsibilities name="loadGameValidated&lt;&lt;out>>" id="37" respRefs="38"/>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap2" id="2">
-      <nodes xsi:type="ucm.map:StartPoint" name="start" id="11" x="56" y="102" succ="//@urndef/@specDiagrams.0/@connections.0">
+      <nodes xsi:type="ucm.map:StartPoint" name="Start" id="11" x="56" y="102" succ="//@urndef/@specDiagrams.0/@connections.0">
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="success" id="13" x="950" y="232" contRef="28" pred="//@urndef/@specDiagrams.0/@connections.4">
+      <nodes xsi:type="ucm.map:EndPoint" name="End - Successs" id="13" x="950" y="232" contRef="28" pred="//@urndef/@specDiagrams.0/@connections.4">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
@@ -32,16 +32,16 @@
         <label/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef36" id="36" x="586" y="109" contRef="28" succ="//@urndef/@specDiagrams.0/@connections.2" pred="//@urndef/@specDiagrams.0/@connections.1" respDef="35">
-        <label/>
+        <label deltaX="-47" deltaY="5"/>
       </nodes>
       <nodes xsi:type="ucm.map:RespRef" name="RespRef38" id="38" x="607" y="212" contRef="28" succ="//@urndef/@specDiagrams.0/@connections.3" pred="//@urndef/@specDiagrams.0/@connections.2" respDef="37">
-        <label/>
+        <label deltaX="6" deltaY="-44"/>
       </nodes>
       <nodes xsi:type="ucm.map:DirectionArrow" name="[properParty]" id="39" x="796" y="215" contRef="28" succ="//@urndef/@specDiagrams.0/@connections.4" pred="//@urndef/@specDiagrams.0/@connections.5">
         <label/>
       </nodes>
       <nodes xsi:type="ucm.map:OrFork" name="OrFork43" id="43" x="680" y="215" contRef="28" succ="//@urndef/@specDiagrams.0/@connections.5 //@urndef/@specDiagrams.0/@connections.6" pred="//@urndef/@specDiagrams.0/@connections.3"/>
-      <nodes xsi:type="ucm.map:EndPoint" name="failure" id="45" x="445" y="385" pred="//@urndef/@specDiagrams.0/@connections.7">
+      <nodes xsi:type="ucm.map:EndPoint" name="End - Failure" id="45" x="445" y="385" pred="//@urndef/@specDiagrams.0/@connections.7">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
@@ -67,8 +67,8 @@
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="46" target="45"/>
     </specDiagrams>
-    <components name="client" id="25" contRefs="26" kind="Agent"/>
-    <components name="server" id="27" contRefs="28" kind="Agent"/>
+    <components name="gameClient" id="25" contRefs="26" kind="Agent"/>
+    <components name="gameServer" id="27" contRefs="28" kind="Agent"/>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
 </urn:URNspec>
