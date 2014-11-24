@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 20, 2014 7:58:54 PM EST" modified="November 24, 2014 6:27:01 PM EST" specVersion="7" urnVersion="1.27" nextGlobalID="382">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 20, 2014 7:58:54 PM EST" modified="November 24, 2014 6:50:01 PM EST" specVersion="9" urnVersion="1.27" nextGlobalID="493">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup5" id="5">
       <scenarios name="ScenarioDef6" id="6"/>
@@ -18,11 +18,11 @@
   <urndef>
     <responsibilities name="Responsibility315" id="315" respRefs="320"/>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap2" id="2">
-      <nodes xsi:type="ucm.map:StartPoint" name="StartPoint11" id="11" x="102" y="161" succ="//@urndef/@specDiagrams.0/@connections.0">
+      <nodes xsi:type="ucm.map:StartPoint" name="start" id="11" x="102" y="161" succ="//@urndef/@specDiagrams.0/@connections.0">
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="EndPoint13" id="13" x="1024" y="158" pred="//@urndef/@specDiagrams.0/@connections.23">
+      <nodes xsi:type="ucm.map:EndPoint" name="success" id="13" x="1024" y="158" pred="//@urndef/@specDiagrams.0/@connections.23">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
@@ -75,6 +75,14 @@
       <nodes xsi:type="ucm.map:DirectionArrow" name="[winningMove]" id="376" x="941" y="160" succ="//@urndef/@specDiagrams.0/@connections.23" pred="//@urndef/@specDiagrams.0/@connections.18">
         <label/>
       </nodes>
+      <nodes xsi:type="ucm.map:StartPoint" name="[exitGame]" id="486" x="273" y="332" succ="//@urndef/@specDiagrams.0/@connections.24">
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="quit" id="488" x="473" y="332" pred="//@urndef/@specDiagrams.0/@connections.24">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
       <connections xsi:type="ucm.map:NodeConnection" source="11" target="54" inBindings="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0/@in.0"/>
       <connections xsi:type="ucm.map:NodeConnection" source="54" target="96" outBindings="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0/@out.0"/>
       <connections xsi:type="ucm.map:NodeConnection" source="63" target="223"/>
@@ -117,6 +125,7 @@
       </connections>
       <connections xsi:type="ucm.map:NodeConnection" source="363" target="338"/>
       <connections xsi:type="ucm.map:NodeConnection" source="376" target="13"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="486" target="488"/>
     </specDiagrams>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Extracted UCM" id="47" parentStub="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0">
       <nodes xsi:type="ucm.map:EndPoint" name="EndPoint13" id="50" x="658" y="161" pred="//@urndef/@specDiagrams.1/@connections.0" outBindings="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0/@out.0">
