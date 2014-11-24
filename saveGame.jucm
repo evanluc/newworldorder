@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 24, 2014 5:21:58 PM EST" modified="November 24, 2014 5:58:14 PM EST" specVersion="4" urnVersion="1.27" nextGlobalID="50">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 24, 2014 5:21:58 PM EST" modified="November 24, 2014 6:45:26 PM EST" specVersion="5" urnVersion="1.27" nextGlobalID="51">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup5" id="5">
       <scenarios name="ScenarioDef6" id="6"/>
@@ -19,11 +19,11 @@
     <responsibilities name="saveGameRequest&lt;&lt;in>>" id="40" respRefs="41"/>
     <responsibilities name="saveStateToDB&lt;&lt;out>>" id="48" respRefs="49"/>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap2" id="2">
-      <nodes xsi:type="ucm.map:StartPoint" name="StartPoint11" id="11" x="52" y="70" succ="//@urndef/@specDiagrams.0/@connections.0">
+      <nodes xsi:type="ucm.map:StartPoint" name="Start" id="11" x="52" y="70" succ="//@urndef/@specDiagrams.0/@connections.0">
         <label/>
         <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
       </nodes>
-      <nodes xsi:type="ucm.map:EndPoint" name="EndPoint13" id="13" x="763" y="192" pred="//@urndef/@specDiagrams.0/@connections.2">
+      <nodes xsi:type="ucm.map:EndPoint" name="End" id="13" x="763" y="192" pred="//@urndef/@specDiagrams.0/@connections.2">
         <label/>
         <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
       </nodes>
@@ -45,7 +45,7 @@
       <connections xsi:type="ucm.map:NodeConnection" source="49" target="13"/>
       <connections xsi:type="ucm.map:NodeConnection" source="50" target="49"/>
     </specDiagrams>
-    <components name="client" id="30" contRefs="31" kind="Agent"/>
+    <components name="gameClient" id="30" contRefs="31" kind="Agent"/>
     <components name="server" id="36" contRefs="37" kind="Agent"/>
   </urndef>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
