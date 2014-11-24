@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 20, 2014 7:58:54 PM EST" modified="November 24, 2014 6:45:26 PM EST" specVersion="8" urnVersion="1.27" nextGlobalID="382">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="evanmcilroy" created="November 20, 2014 7:58:54 PM EST" modified="November 24, 2014 6:51:39 PM EST" specVersion="9" urnVersion="1.27" nextGlobalID="382">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup5" id="5">
       <scenarios name="ScenarioDef6" id="6"/>
@@ -29,8 +29,6 @@
       <nodes xsi:type="ucm.map:Stub" name="loginOrCreate" id="54" x="223" y="161" succ="//@urndef/@specDiagrams.0/@connections.1" pred="//@urndef/@specDiagrams.0/@connections.0">
         <label/>
         <bindings plugin="47">
-          <in startPoint="49" stubEntry="//@urndef/@specDiagrams.0/@connections.0"/>
-          <out endPoint="50" stubExit="//@urndef/@specDiagrams.0/@connections.1"/>
           <precondition label="" expression="true"/>
         </bindings>
       </nodes>
@@ -75,8 +73,8 @@
       <nodes xsi:type="ucm.map:DirectionArrow" name="[winningMove]" id="376" x="941" y="160" succ="//@urndef/@specDiagrams.0/@connections.23" pred="//@urndef/@specDiagrams.0/@connections.18">
         <label/>
       </nodes>
-      <connections xsi:type="ucm.map:NodeConnection" source="11" target="54" inBindings="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0/@in.0"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="54" target="96" outBindings="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0/@out.0"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="11" target="54"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="54" target="96"/>
       <connections xsi:type="ucm.map:NodeConnection" source="63" target="223"/>
       <connections xsi:type="ucm.map:NodeConnection" source="65" target="277"/>
       <connections xsi:type="ucm.map:NodeConnection" source="72" target="236">
@@ -118,19 +116,7 @@
       <connections xsi:type="ucm.map:NodeConnection" source="363" target="338"/>
       <connections xsi:type="ucm.map:NodeConnection" source="376" target="13"/>
     </specDiagrams>
-    <specDiagrams xsi:type="ucm.map:UCMmap" name="Extracted UCM" id="47" parentStub="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0">
-      <nodes xsi:type="ucm.map:EndPoint" name="EndPoint13" id="50" x="658" y="161" pred="//@urndef/@specDiagrams.1/@connections.0" outBindings="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0/@out.0">
-        <label/>
-        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:StartPoint" name="StartPoint11" id="49" x="102" y="161" succ="//@urndef/@specDiagrams.1/@connections.1" inBindings="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0/@in.0">
-        <label/>
-        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
-      </nodes>
-      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint12" id="48" x="223" y="161" succ="//@urndef/@specDiagrams.1/@connections.0" pred="//@urndef/@specDiagrams.1/@connections.1"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="48" target="50"/>
-      <connections xsi:type="ucm.map:NodeConnection" source="49" target="48"/>
-    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="Extracted UCM" id="47" parentStub="//@urndef/@specDiagrams.0/@nodes.2/@bindings.0"/>
     <specDiagrams xsi:type="ucm.map:UCMmap" name="Extracted UCM" id="278" parentStub="//@urndef/@specDiagrams.0/@nodes.14/@bindings.0">
       <nodes xsi:type="ucm.map:StartPoint" name="StartPoint298" id="280" x="570" y="234" succ="//@urndef/@specDiagrams.2/@connections.0" inBindings="//@urndef/@specDiagrams.0/@nodes.14/@bindings.0/@in.0">
         <label/>
